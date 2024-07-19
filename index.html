@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
       <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+      <link rel="shortcut icon" href="assets/img/e-icon.png" type="image/x-icon">
 
       <!--=============== REMIXICONS ===============-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" crossorigin="">
@@ -13,7 +13,7 @@
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css">
 
-      <title>Responsive portfolio website Endalk - Bedimcode</title>
+      <title>Endalk Abebe Portfolio</title>
    </head>
    <body>
       <!--==================== HEADER ====================-->
@@ -23,12 +23,12 @@
                 <span class="nav__logo-circle">E</span>
                 <span class="nave__logo-name">Endalkachew Abebe.</span>
             </a>
-            <div class="nav__menu" id="nav_menu">
-                <span class="nav__">Menu</span>
-                <h3 class="nav_name">Endalkachew </h3>
+            <div class="nav__menu" id="nav-menu">
+                <span class="nav__title">Menu</span>
+                <h3 class="nav__name">Endalkachew </h3>
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">Home</a>
+                        <a href="#home" class="nav__link active-link">Home</a>
                     </li>
 
                     <li class="nav__item">
@@ -40,7 +40,7 @@
                     </li>
 
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link">Contact Me</a>
+                        <a href="#contact" class="nav__link nav__link-button">Contact Me</a>
                     </li>
                 </ul>
 
@@ -51,6 +51,8 @@
             </div>
 
             <div class="nav__buttons">
+                <!--Theme button-->
+                <i class="ri-moon-line change-theme" id = "theme-button"></i>
                 <!--Toggle button-->
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="ri-menu-4-line"></i>
@@ -63,12 +65,92 @@
       <main class="main">
          <!--==================== HOME ====================-->
          <section class="home section" id="home">
-            
+            <div class="home__container container grid">
+                <h1 class="home__name">
+                    Endalkachew Abebe
+                </h1>
+                <div class="home__perfil">
+                    <div class="home__image">
+                        <img src="assets/img/endalk1.png" alt="image" class="home__img">
+                        <div class="home__shadow"></div>
+                        <img src="assets/img/curved-arrow.svg" alt="" class="home__arrow">
+                        <img src="assets/img/random-lines.svg" alt="" class="home__line">
+                        <div class="geometric-box"></div>
+                    </div>
+
+                    <div class="home__social">
+                        <!--
+                        <a href="" target= "_blank" class = "home__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        -->
+                        
+
+                        <a href="https://www.linkedin.com/in/endalkachew-abebe-16529a213/" target= "" class = "home__social-link">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+
+                        <a href="https://github.com/endalkK" target= "" class = "home__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="home__info">
+                    <p class="home__description">
+                        <b>Hi there!</b>, 
+                        With a near-perfect GPA and a dedication to innovation, I've developed projects that blend cutting-edge technology with practical applications. 
+                        <b>Welcome to my portfolio</b>, where I showcase my journey and achievements.
+                    </p>
+                    <a href="#about" class="home__scroll">
+                        <div class="home__scroll-box">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </div>
+                        <span class="home__scroll-text">Scroll Down</span>
+                    </a>
+                </div>
+            </div>
          </section>
 
          <!--==================== ABOUT ====================-->
          <section class="about section" id="about">
-            
+            <div class="about__container container grid">
+                <h2 class="section__title-1">About Me.</h2>
+
+                <div class="about__perfil">
+                    <div class="about__image">
+                        <img src="assets/img/endalk.jpg" alt="image" class="about__img">
+
+                        <div class="about__shadow"></div>
+
+                        <div class="geometric-box"></div>
+                        <img src="assets/img/random-lines.svg" alt="" class="about__line">
+                        <div class="about__box"></div>
+                    </div>
+                </div>
+                <div class="about__info">
+                    <p class="about__description">
+                        Hi my name is <b>Endalkachew Abebe</b>.
+                        I am passionate about 
+                        building the future, <b>one line of code and one servo motor</b> at a time.
+                    </p>
+                    <ul class="about__list">
+                        <li class="about__item">
+                            <b>My Skills Are:</b> 
+                            <br><u>Languages:</u> C, C++, Python, HTML, CSS, Javascript, React Native, SQL, SQLite <br>
+                            <br><u> Technologies/Software:</u> Arduino, AWS, Flask, Git, CircuitPython, Onshape/CAD, Pythorch, Raspberry Pi, ROS, TensorFlow
+                        </li>
+                    </ul>
+
+                    <div class="about__buttons">
+                        <a href="assets/img/Endalkachew Abebe Resume.pdf" class="button">
+                            <i class="ri-send-plane-line"></i> Download Resume
+                        </a>
+                        <a href="https://www.linkedin.com/in/endalkachew-abebe-16529a213/" target="_blank" class="button__ghost">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
          </section>
 
          <!--==================== SERVICES ====================-->
@@ -78,28 +160,424 @@
 
          <!--==================== PROJECTS ====================-->
          <section class="projects section" id="projects">
-            
+            <h2 class="section__title-1">
+                <span>Projects.</span>
+            </h2>
+
+            <div class="projects__container container grid">
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="assets/img/robot0.jpg" alt="image" class="projects__img">
+                        <a href="https://github.com/endalkK/line-follower" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__subtitle">Arduino/C++</h3>
+                        <h2 class="project__title">Line Follower</h2>
+                        <p class="project__description">
+                            Developed an autonomous line-following robot utilizing the Adafruit Huzzah32 Feather microprocessor and Arduino framework. 
+                            Implemented sophisticated control algorithms to precisely track black lines on a whiteboard, ensuring accurate navigation through 
+                            real-time sensor feedback and motor control adjustments. Optimized robot performance for efficient line detection and following, 
+                            overcoming challenges such as line curvature, intersections, and varying line widths.
+                        </p>
+                    </div>
+
+                    <div class="projects__buttons">
+                        <a href="https://github.com/endalkK/line-follower" class= "projects__link">
+                            <i class="ri-github-line"></i> Github
+                        </a>
+
+                        <a href="" class= "projects__link">
+                            <i class="ri-dribbble-line"></i> Demo
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="assets/img/cant cook.png" alt="image" class="projects__img">
+                        <a href="https://github.com/RaphaelSackey/can-t_cook_api" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__subtitle">Python, Flutter, TensorFlow, Flask</h3>
+                        <h2 class="project__title">Can't Cook</h2>
+                        <p class="project__description">
+                            Can't Cook is a mobile app that utilizes image recognition 
+                            and machine learning to transform food photography into recipe inspiration. 
+                            By scanning food items with a smartphone, users can generate recipe ideas through a user-friendly 
+                            interface. The app combines Flutter for cross-platform development, 
+                            TensorFlow for image processing, and a Python-based backend to deliver a seamless user experience 
+                            and access to a vast recipe database.
+                        </p>
+                    </div>
+
+                    <div class="projects__buttons">
+                        <a href="https://github.com/RaphaelSackey/can-t_cook_api" class= "projects__link">
+                            <i class="ri-github-line"></i> Github
+                        </a>
+
+                        <a href="" class= "projects__link">
+                            <i class="ri-dribbble-line"></i> Demo
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="assets/img/tetris0.webp" alt="image" class="projects__img">
+                        <a href="https://github.com/endalkK/tetris" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__subtitle">Python</h3>
+                        <h2 class="project__title">Tetris: Adafruit Feather nRF52840 with OLED</h2>
+                        <p class="project__description">
+                            A compact and optimized Tetris game built on the Adafruit Feather nRF52840 microcontroller platform, 
+                            featuring a captivating user experience through a 128x64 OLED display and responsive button controls. 
+                            Rigorously designed to maximize performance within the microcontroller's resource constraints.
+                        </p>
+                    </div>
+
+                    <div class="projects__buttons">
+                        <a href="https://github.com/endalkK/tetris" target="_blank" class= "projects__link">
+                            <i class="ri-github-line"></i> Github
+                        </a>
+
+                        <a href="" class= "projects__link">
+                            <i class="ri-dribbble-line"></i> Demo
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="assets/img/pile-3d-twitter-logos.jpg" alt="image" class="projects__img">
+                        <a href="#" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__subtitle">Python</h3>
+                        <h2 class="project__title">SentimentSwift: Twitter(X) Edition</i></h2>
+                        <p class="project__description">
+                            SentimentSwift: Twitter(X) Edition is a sentiment analysis tool that accurately predicts sentiment in Twitter(X) data. 
+                            By comparing and evaluating Bernoulli Naive Bayes, SVM, and Logistic Regression models using accuracy, 
+                            F1 score, and AUC-ROC metrics, Logistic Regression demonstrated superior performance. 
+                            This model, enhanced by extensive data preprocessing, achieved an 85% accuracy rate and is now deployed for real-time sentiment classification of tweets.
+                        </p>
+                    </div>
+
+                    <div class="projects__buttons">
+                        <a href="" target="_blank" class= "projects__link">
+                            <i class="ri-github-line"></i> Google Colab
+                        </a>
+                        <!-- 
+                        <a href="" target="_blank" class= "projects__link">
+                            <i class="ri-dribbble-line"></i> View
+                        </a>
+                        -->
+                        
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="assets/img/marsrover.webp" alt="image" class="projects__img">
+                        <a href="https://github.com/endalkK/mars-rover" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__subtitle">Arduino/C++</h3>
+                        <h2 class="project__title">Mars Rover</h2>
+                        <p class="project__description">
+                            Developed a sophisticated Mars rover simulating robot using Arduino, 
+                            incorporating a complex grid-based environment with diverse terrain and obstacles. 
+                            Implemented advanced navigation algorithms including Wavefront pathfinding and PID, 
+                            MPC, and whole body control for precise and efficient rover movement, achieving a 
+                            remarkable 95% success rate in traversing challenging Martian landscapes. 
+                            Significantly enhanced rover performance by optimizing path planning and control strategies, 
+                            resulting in a 60% increase in navigation efficiency and a 50% reduction in error rate.
+                        </p>
+                    </div>
+
+                    <div class="projects__buttons">
+                        <a href="https://github.com/endalkK/mars-rover" class= "projects__link">
+                            <i class="ri-github-line"></i> Github
+                        </a>
+                        
+                        
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="assets/img/eclipse.webp" alt="image" class="projects__img">
+                        <a href="https://github.com/endalkK/Eclipse-Tracker" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__subtitle">Python</h3>
+                        <h2 class="project__title">Eclipse Tracker<i></i></h2>
+                        <p class="project__description">
+                            Developed a comprehensive eclipse tracking system utilizing the 
+                            Adafruit Feather nRF52840 Sense and CircuitPython to capture and 
+                            analyze environmental data during the April 2024 annular solar eclipse. 
+                            Implemented a real-time data acquisition pipeline to record temperature, 
+                            humidity, pressure, light intensity, and sound levels, effectively documenting 
+                            environmental changes as the moon partially obscured the sun. 
+                            Leveraged CircuitPython's efficiency for seamless data processing and visualization 
+                            on the onboard OLED display, providing valuable insights into the environmental impact of this celestial event.
+                        </p>
+                    </div>
+
+                    <div class="projects__buttons">
+                        <a href="https://github.com/endalkK/Eclipse-Tracker" class= "projects__link">
+                            <i class="ri-github-line"></i> Github
+                        </a>
+
+                        
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="assets/img/graph0.jpg" alt="image" class="projects__img">
+                        <a href="https://github.com/endalkK/Assessing-employment-patterns-in-suny-institutions-relative-to-county-populations" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__subtitle">C++</h3>
+                        <h2 class="project__title">Assessing Employment Patterns in SUNY Institutions Relative to County Populations</h2>
+                        <p class="project__description">
+                            This C++ program examines the relationship between full-time employment at SUNY institutions and New York county populations, 
+                            considering the impact of population growth on employment percentages. By analyzing 2020 population averages and 
+                            comparing them to SUNY employee averages, a positive correlation was found. As county populations increased, 
+                            corresponding SUNY institutions experienced growth in full-time employment, indicating a direct relationship 
+                            between demographic and employment trends within the SUNY system.
+                        </p>
+                    </div>
+
+                    <div class="projects__buttons">
+                        <a href="https://github.com/endalkK/Assessing-employment-patterns-in-suny-institutions-relative-to-county-populations" class= "projects__link">
+                            <i class="ri-github-line"></i> Github
+                        </a>
+
+                        
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="assets/img/tictactoe.webp" alt="image" class="projects__img">
+                        <a href="https://github.com/endalkK/tictactoe" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__subtitle">Python</h3>
+                        <h2 class="project__title">Tic-Tac-Toe</h2>
+                        <p class="project__description">
+                            Developed an unbeatable Tic-Tac-Toe AI player using the Minimax algorithm. 
+                            Implemented a robust game engine capable of efficiently exploring all possible game states, 
+                            enabling the AI to make optimal decisions at every turn. Optimized the Minimax algorithm to 
+                            efficiently evaluate game positions and select the most advantageous move, guaranteeing either 
+                            a win or a draw against any opponent.
+                        </p>
+                    </div>
+
+                    <div class="projects__buttons">
+                        <a href="https://github.com/endalkK/tictactoe" class= "projects__link">
+                            <i class="ri-github-line"></i> Github
+                        </a>
+
+                        
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="assets/img/mine.webp" alt="image" class="projects__img">
+                        <a href="https://github.com/endalkK/minesweeper" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__subtitle">Python</h3>
+                        <h2 class="project__title">Minesweeper AI</h2>
+                        <p class="project__description">
+                            Developed a sophisticated AI capable of autonomously mastering the game of Minesweeper. 
+                            Implemented advanced pattern recognition algorithms and logical inference techniques to 
+                            accurately identify mine locations and safe squares. Utilized probabilistic reasoning to 
+                            make informed decisions in uncertain game states, demonstrating exceptional performance and 
+                            efficiency in navigating the Minesweeper grid.
+                        </p>
+                    </div>
+
+                    <div class="projects__buttons">
+                        <a href="https://github.com/endalkK/minesweeper"  class= "projects__link">
+                            <i class="ri-github-line"></i> Github
+                        </a>
+
+                        
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="assets/img/unistore.jpg" alt="image" class="projects__img">
+                        <a href="https://github.com/endalkK/unistore" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__subtitle">Python</h3>
+                        <h2 class="project__title">UniStore</h2>
+                        <p class="project__description">  
+                        UniStore is a Python-based file archiving system designed for efficient file management. 
+                        By eliminating carriage returns and newline characters, UniStore ensures data integrity 
+                        within a single archive file. The system offers a user-friendly command-line interface for 
+                        seamless file addition, removal, and listing, providing a robust and efficient archiving solution.
+                        </p>
+                    </div>
+
+                    <div class="projects__buttons">
+                        <a href="https://github.com/endalkK/unistore" class= "projects__link">
+                            <i class="ri-github-line"></i> Github
+                        </a>
+
+                        
+                    </div>
+                </article>
+            </div>
          </section>
 
          <!--==================== CONTACT ====================-->
          <section class="contact section" id="contact">
-            
+            <div class="contact__container grid">
+                <div class="contact__data">
+                    <h2 class="section__title-2">Contact Me.</h2>
+
+                    <p class="contact__description-1">
+                        I will read all emails. semd me any
+                        message you want and I'll get back to you.
+                    </p>
+
+                    <p class="contact__description-2">
+                        I need your <b>Name</b> and <b>Email Address</b>, but 
+                        you won't receive anything other than your reply. 
+                    </p>
+
+                    <div class="geometric-box"></div>
+                </div>
+
+                <div class="contact__mail">
+                    <h2 class="contact__title">
+                        Send Me A Massage
+                    </h2>
+                    <form action="" class="contact__form" id="contact-form">
+                        <div class="contact__group">
+                            <div class="contact__box">
+                                <input type="text" name="user_name" class="contact__input" id="name" required placeholder="Name">
+                                <lable for="name" class="contact__lable">Name</lable>
+                            </div>
+
+                            <div class="contact__box">
+                                <input type="email" name="user_email" class="contact__input" id="email" required placeholder="Email Address">
+                                <lable for="email" class="contact__lable">Email Address</lable>
+                            </div>
+                        </div>
+
+                        <div class="contact__box">
+                            <input type="text" name="user_subject" class="contact__input" id="subject" required placeholder="Subject">
+                            <lable for="subject" class="contact__lable">Subject</lable>
+                        </div>
+
+                        <div class="contact__box contact__area">
+                            <textarea name="user_message" id="message" class="contact__input" required placeholder="Message"></textarea>
+                            <lable for="message" class="contact__lable">Message</lable>
+                        </div>
+                        
+                        <p class="contact__message" id="contact-message"></p>
+
+                        <button type="submit" class="contact__button button">
+                            <i class="ri-send-plane-line"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact__social">
+                    <img src="assets/img/curved-arrow.svg" alt="" class="contact__social-arrow">
+
+                    <div class="contact__social-data">
+                        <div>
+                            <p class="contact__social-description-1">
+                                Doesn't want to send an email?
+                            </p>
+
+                            <p class="contact__social-description-2">
+                                Contact me on my social networks.
+                            </p>
+                        </div>
+                        <div class="contact__social-links">
+                            <a href="" target="_blank" class="contact__social-link">
+                                <i class="ri-facebook-box-line"></i>
+                            </a>
+
+                            <a href="" target="_blank" class="contact__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+
+                            <a href="" target="_blank" class="contact__social-link">
+                                <i class="ri-linkedin-box-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
          </section>
       </main>
 
       <!--==================== FOOTER ====================-->
       <footer class="footer">
-         
+         <div class="footer__container container grid">
+            <ul class="footer__links">
+                <li>
+                    <a href="#home" class="footer__link">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+
+                <li>
+                    <a href="#projects" class="footer__link">Projects</a>
+                </li>
+            </ul>
+            <span class="footer__copy">
+                All Rights Reserved By <a href="">Endalkachew Abebe</a>
+            </span>
+         </div>
       </footer>
 
       <!--========== SCROLL UP ==========-->
-      
+      <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-s-line"></i>
+      </a>
 
       <!--=============== SCROLLREVEAL ===============-->
-      <script src=""></script>
+      <script src="assets/js/scrollreveal.min.js"></script>
       
       <!--=============== EMAIL JS ===============-->
-      
+      <script
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+      </script>
 
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
